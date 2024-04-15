@@ -1,12 +1,11 @@
 require 'pry'
 
 class Item
-    attr_reader :item, :name, :price
+    attr_reader :name, :price
 
     def initialize(item)
-        @item = item
-        @name = @item[:name]
-        @price = @item[:price]
+        @name = item[:name]
+        @price = item[:price]
 
     end
 end
