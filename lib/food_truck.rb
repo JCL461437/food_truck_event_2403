@@ -9,4 +9,13 @@ class FoodTruck
         @name = name
     
     end
+
+    def check_stock(item)
+        @inventory.count(item)
+    end
+
+    def stock(item, quantity)
+        @inventory.store(item, quantity)
+    end
 end
+
