@@ -21,7 +21,7 @@ RSpec.describe Item do
         end
 
         it 'can return item price' do
-            expect(@item1.price).to eq("$3.75")
+            expect(@item1.price).to eq(3.75)
         end
     end
 
